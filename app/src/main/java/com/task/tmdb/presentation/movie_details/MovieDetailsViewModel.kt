@@ -38,6 +38,11 @@ class MovieDetailsViewModel @Inject constructor(
         getSimilarMovies()
     }
 
+    fun refresh() {
+        getDetails()
+        getSimilarMovies()
+    }
+
     private fun getDetails() = viewModelScope.launch {
         withContext(Dispatchers.IO) {
             _details.value = Result.Loading

@@ -16,10 +16,13 @@ class GetMovieDetailsUseCase @Inject constructor(
             val result = repository.getMovieDetails(id)
             Result.Success(result)
         } catch (e: HttpException) {
+            e.printStackTrace()
             Result.Error(e.message(), e)
         } catch (e: IOException) {
+            e.printStackTrace()
             Result.Error(e.localizedMessage ?: "Unknown Error", e)
         } catch (e: Exception) {
+            e.printStackTrace()
             Result.Error(e.localizedMessage ?: "Unknown Error", e)
         }
     }

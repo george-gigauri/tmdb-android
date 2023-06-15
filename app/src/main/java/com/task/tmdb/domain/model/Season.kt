@@ -9,5 +9,5 @@ data class Season(
     val posterPath: String,
     val overview: String,
     val episodeCount: Int,
-    val airDate: Date
+    val airDate: Date?
 )

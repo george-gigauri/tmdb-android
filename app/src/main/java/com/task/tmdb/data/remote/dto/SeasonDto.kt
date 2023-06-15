@@ -3,7 +3,7 @@ package com.task.tmdb.data.remote.dto
 import com.google.gson.annotations.SerializedName
 
 data class SeasonDto(
-    @SerializedName("air_date") val airDate: String,
+    @SerializedName("air_date") val airDate: String?,
     @SerializedName("episode_count") val episodeCount: Int,
     @SerializedName("id") val id: Int,
     @SerializedName("name") val name: String,

@@ -97,7 +97,7 @@ fun MovieDetailsScreen(
                     ) {
                         Error(
                             message = (details as Result.Error).message ?: "",
-                            onRetry = { },
+                            onRetry = { viewModel.refresh() },
                             modifier = Modifier.align(Alignment.Center)
                         )
                     }
@@ -199,7 +199,7 @@ fun MovieDetailsScreen(
                                 Box(modifier = Modifier.fillMaxSize()) {
                                     Error(
                                         message = (similarMovies as Result.Error).message ?: "",
-                                        onRetry = { },
+                                        onRetry = { viewModel.refresh() },
                                         modifier = Modifier.align(Alignment.Center)
                                     )
                                 }

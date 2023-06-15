@@ -4,6 +4,7 @@ import com.task.tmdb.common.Const
 import com.task.tmdb.data.remote.dto.SeasonDto
 import com.task.tmdb.domain.model.Season
 import java.text.SimpleDateFormat
+import java.util.Locale
 
 fun SeasonDto.toDomain(): Season {
     return Season(
@@ -13,6 +14,6 @@ fun SeasonDto.toDomain(): Season {
         "${Const.TMDB_IMAGE_PATH_PREFIX_W400}$posterPath",
         overview,
         episodeCount,
-        SimpleDateFormat("yyyy-MM-dd").parse(airDate)
+        airDate?.let { SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).parse(it) }
     )
 }
