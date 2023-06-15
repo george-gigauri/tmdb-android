@@ -5,7 +5,7 @@
 TMDB Android app is a popular movies catalog where you can find different movies with different popularity around the world. 
 
 ## **ScreenShots**
-![screenshots]([https://raw.githubusercontent.com/george-gigauri/tbilisi-public-transport-compose-clean/main/images/BUSPLORE%20Poster%20Screenshots.jpg](https://github.com/george-gigauri/tmdb-android/blob/main/screenshots/screen-0.jpg?raw=true))
+![screenshots](https://github.com/george-gigauri/tmdb-android/blob/main/screenshots/screen-0.jpg?raw=true)
 
 ## **Requirements**
 - Android 7.0 and later
