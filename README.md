@@ -4,8 +4,12 @@
 
 TMDB Android app is a popular movies catalog where you can find different movies with different popularity around the world. 
 
-## **ScreenShots**
+## **Screenshots**
 ![screenshots](https://github.com/george-gigauri/tmdb-android/blob/main/screenshots/screen-0.jpg?raw=true)
+
+## **Features**
+- On the main screen there is an infinite scrolling feature with Paging3 that displays popular movies list.
+- When the movie item is clicked, user then is navigated to the details screen, where more details and similar movies list are displayed.
 
 ## **Requirements**
 - Android 7.0 and later
@@ -20,6 +24,7 @@ Add TMDB_API_KEY=your api key inside your local.properties file
 - Jetpack Compose
 - Compose Navigation
 - Material3
+- Paging3
 - Dagger Hilt
 - Kotlin Coroutines
 - Kotlin Flow
